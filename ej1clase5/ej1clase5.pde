@@ -3,12 +3,14 @@ void setup() {
 }
 
 void draw () {
-  if (mousePressed) {
+  background (0);
+
+  if (mouseX>50) {
+    print ("La posicion del mouse es mas de 100");
     fill(150);
-  }else{
+  } else {
     fill(255);
   }
 
-  background (0);
-  rect(mouseX, mouseY, 50, 50);
+  rect(50, 50, 50, 50);
 }
